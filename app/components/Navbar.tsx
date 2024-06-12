@@ -7,11 +7,11 @@ import { useScreenDetector } from "./useScreenDetector";
 const Navbar = (props: any) => {
   const { currentPage } = props;
   const { isMobile, isTablet, isDesktop } = useScreenDetector();
-  return (
-    <div>
-      {(isMobile || isTablet) && <NavbarMobile currentPage={currentPage} />}
-      {isDesktop && <NavbarPC currentPage={currentPage} />}
-    </div>
-  );
+  if (isDesktop) {
+    return <NavbarPC currentPage={currentPage} />;
+  }
+  if (isMobile || isTablet) {
+    return <NavbarMobile currentPage={currentPage} />;
+  }
 };
 export default Navbar;

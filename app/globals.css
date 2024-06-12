@@ -14,8 +14,6 @@
 .stickyCSSClass {
   position: fixed;
   top: 0;
-  left: auto;
-  right: auto;
   z-index: 50;
   width: fit-content;
   display: flex;
