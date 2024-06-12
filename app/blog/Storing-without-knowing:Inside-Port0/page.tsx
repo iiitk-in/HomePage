@@ -1,4 +1,3 @@
-"use server";
 import Navbar from "@/app/components/Navbar";
 import BlogTitle from "../components/BlogTitle";
 import BlogDescription from "../components/BlogDescription";

@@ -2,7 +2,6 @@
 import Navbar from "./components/Navbar";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-
 function Section({ children }: { children: React.ReactNode }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });

@@ -17,8 +17,11 @@ const BlogCard = (props: any) => {
         {description}
       </div>
       <div className="mt-4 mx-4">
-        {tags.map((tag: string) => (
-          <span className="text-lg font-semibold bg-[#686868] text-white rounded-md px-2 py-1 mr-2 hover:cursor-pointer hover:bg-[#5A5A5A] transition transition-all-0.5s">
+        {tags.map((tag: string, index: number) => (
+          <span
+            key={index}
+            className="text-lg font-semibold bg-[#686868] text-white rounded-md px-2 py-1 mr-2 hover:cursor-pointer hover:bg-[#5A5A5A] transition transition-all-0.5s"
+          >
             {tag}
           </span>
         ))}
