@@ -6,7 +6,6 @@ const NavbarMobile = (props: any) => {
   const [display, setDisplay] = useState(false);
 
   const toggleDisplay = () => {
-    console.log("toggle display");
     setDisplay(!display);
   };
   return (
@@ -25,7 +24,7 @@ const NavbarMobile = (props: any) => {
         className={
           display
             ? "flex justify-center mt-2 w-screen translate-x-0 transition-transform"
-            : "translate-x-[-100%] transition-transform"
+            : "translate-x-[-1000%] transition-transform"
         }
       >
         <div className="rounded-xl px-2 mx-10 flex flex-row justify-start bg-[#292929]  h-[67px]">
