@@ -6,11 +6,11 @@ const Home = () => {
       <div className="flex">
         <Navbar currentPage="Home" />
       </div>
-      <div className="mt-[180px]">
-        <h1 className="leading-tight text-9xl sm:text-[200px] font-bold bg-gradient-to-t from-cyan-400 to-green-600 text-transparent bg-clip-text bg-300% animate-gradient text-center">
+      <div className="mt-[100px] sm:mt-[180px]">
+        <h1 className="leading-tight text-8xl sm:text-[200px] font-bold bg-gradient-to-t from-cyan-400 to-green-600 text-transparent bg-clip-text bg-300% animate-gradient text-center">
           IIITK.in
         </h1>
-        <p className="mx-4 font-bold text-white text-center text-4xl">
+        <p className="mx-4 font-bold text-white text-center text-3xl">
           IIIT Kottayam&apos;s student run host
         </p>
         <p className="font-bold text-white text-center text-xl mt-3">
