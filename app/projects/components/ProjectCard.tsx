@@ -27,7 +27,7 @@ const ProjectCard = (props: any) => {
   const { title, description, github, link } = props;
   return (
     <Section>
-      <div className="h-full  bg-gradient-to-t from-[#333333] to-[#282828] p-8 rounded-xl border border-1 border-[#606060]">
+      <div className="h-full  bg-gradient-to-t from-[#333333] to-[#282828] p-8 rounded-xl border border-1 border-[#606060] hover:border-white transition-all-ease-in-out duration-300">
         <div className="text-4xl font-bold bg-gradient-to-b from-cyan-400 to-green-600 text-transparent bg-clip-text">
           {title}
         </div>

@@ -1,8 +1,28 @@
+"use client";
+import { useEffect, useRef, useState } from "react";
 import Navbar from "../components/Navbar";
 import ProjectCard from "./components/ProjectCard";
 import Searchicon from "./components/Searchicon";
 
 const ProjectsPage = () => {
+  const btnRef = useRef<HTMLInputElement>(null);
+
+  const setFocus = () => {
+    if (btnRef.current) {
+      btnRef.current.focus();
+    }
+  };
+
+  const keyDownHandler = (event: KeyboardEvent) => {
+    if (event.ctrlKey && event.key === "k") {
+      event.preventDefault();
+      setFocus();
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("keydown", keyDownHandler);
+  });
   return (
     <div className="overflow-auto bg-gradient-to-b from-neutral-900 to-slate-800">
       <div className="flex">
@@ -13,9 +33,10 @@ const ProjectsPage = () => {
           <h1>Projects</h1>
         </div>
         <div className="flex flex-row justify-center lg:justify-end mt-5 sm:mt-5 sm:mx-10 ">
-          <div className="flex flex-row px-2 sm:px-8 py-4 rounded-xl bg-[#292929] ">
+          <div className=" flex flex-row px-2 sm:px-8 py-4 rounded-xl bg-[#292929] border border-zinc-700 hover:border-white transition-all-ease-in-out duration-300">
             <input
               type="text"
+              ref={btnRef}
               placeholder="Search Projects"
               className="bg-transparent border-none text-white focus:border-none focus:outline-none  text-start sm:text-lg mr-2 sm:w-fit-content placeholder:font-bold"
             />
