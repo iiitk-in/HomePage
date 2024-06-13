@@ -6,7 +6,7 @@ import Searchicon from "./components/Searchicon";
 
 const ProjectsPage = () => {
   const btnRef = useRef<HTMLInputElement>(null);
-
+  const [outline, setOutline] = useState<boolean>(false);
   const setFocus = () => {
     if (btnRef.current) {
       btnRef.current.focus();
@@ -17,6 +17,9 @@ const ProjectsPage = () => {
     if (event.ctrlKey && event.key === "k") {
       event.preventDefault();
       setFocus();
+      setOutline(true);
+    } else if (event.key === "escape") {
+      setOutline(false);
     }
   };
 
@@ -33,7 +36,11 @@ const ProjectsPage = () => {
           <h1>Projects</h1>
         </div>
         <div className="flex flex-row justify-center lg:justify-end mt-5 sm:mt-5 sm:mx-10 ">
-          <div className=" flex flex-row px-2 sm:px-8 py-4 rounded-xl bg-[#292929] border border-zinc-700 hover:border-white transition-all-ease-in-out duration-300">
+          <div
+            className={`flex flex-row px-2 sm:px-8 py-4 rounded-xl bg-[#292929] border  hover:border-white transition-all-ease-in-out duration-300 ${
+              outline ? "border-white" : "border-zinc-700"
+            }`}
+          >
             <input
               type="text"
               ref={btnRef}

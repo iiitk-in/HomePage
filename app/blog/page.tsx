@@ -26,9 +26,10 @@ const Blog = () => {
           />
           <BlogCard
             title="Cloud: Why we did what we did"
-            date="June 12, 2024"
+            date="June 13, 2024"
             description="The thought process of deciding how we would eventually get IIITK.in up."
             tags={["IIITK.in", "DevOps"]}
+            link="Cloud:Why-we-did-what-we-did"
           />
         </div>
       </div>
