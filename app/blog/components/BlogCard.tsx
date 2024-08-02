@@ -1,8 +1,9 @@
+/** eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 
 /* eslint-disable react/jsx-key */
 const BlogCard = (props: any) => {
-  const { title, description, date, tags, link } = props;
+  const { title, description, date, tags, link, avatar, author } = props;
   return (
     <div className=" rounded-2xl sm:px-8 py-6 bg-gradient-to-t from-zinc-800 to-zinc-800 flex flex-col text-white justify-center sm:w-fit mb-8 border border-zinc-800 hover:border-1 hover:border-teal-600 transition-all-ease-in-out duration-300">
       <Link href={`/blog/${link}`}>
@@ -12,6 +13,15 @@ const BlogCard = (props: any) => {
           </h1>
         </div>
         <div className="mx-4 flex text-lg font-semibold mb-4">{date}</div>
+        <div className="flex flex-row items-center mb-4 ml-2">
+          <img
+            src={avatar}
+            className="h-8 w-8 rounded-full inline-block ml-2"
+            alt="author"
+          />
+          <div className="ml-2 font-semibold">{author}</div>
+        </div>
+
         <div className="mx-4 w-fit flex break-word text-lg font-semibold md:w-[720px]">
           {description}
         </div>

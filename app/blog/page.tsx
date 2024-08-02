@@ -18,18 +18,22 @@ const Blog = () => {
         </div>
         <div className="mx-12 flex ml-4 mr-4 flex-col items-center justify-center mt-24 ">
           <BlogCard
-            title="Storing without Knowing: Inside Port0"
-            date="April 26, 2024"
-            description="How Port0's Zero Trust Architecture ensures only you have access to your data"
-            tags={["Port0"]}
-            link="Storing-without-knowing:Inside-Port0"
-          />
-          <BlogCard
             title="Cloud: Why we did what we did"
-            date="June 13, 2024"
+            date="13 June 2024"
             description="The thought process of deciding how we would eventually get IIITK.in up."
             tags={["IIITK.in", "DevOps"]}
+            avatar="https://avatars.githubusercontent.com/u/71581580?v=2"
+            author="Proximus"
             link="Cloud:Why-we-did-what-we-did"
+          />
+          <BlogCard
+            title="Storing without Knowing: Inside Port0"
+            date="26 April 2024"
+            description="How Port0's Zero Trust Architecture ensures only you have access to your data"
+            tags={["Port0"]}
+            avatar="https://avatars.githubusercontent.com/u/81463636?v=2"
+            author="NotAProton"
+            link="Storing-without-knowing:Inside-Port0"
           />
         </div>
       </div>
