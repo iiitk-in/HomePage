@@ -12,7 +12,7 @@ function Section({ children }: { children: React.ReactNode }) {
         style={{
           transform: isInView ? "none" : "translateX(-100px)",
           opacity: isInView ? 1 : 0,
-          transition: "all 0.9s ease-in 0.5s",
+          transition: "all  ease-in 0.5s",
         }}
       >
         {children}

@@ -62,9 +62,9 @@ const ProjectsPage = () => {
         </div>
         <div>
           <h1 className="text-center md:text-start text-4xl font-bold text-white mx-10 mt-5">
-            Popular Projects
+            Projects
           </h1>
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 mx-10 flex gap-8  my-10 gap-y-10  mb-24">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 mx-10  gap-8  my-10 gap-y-10  mb-24">
             <ProjectCard
               title="Port0"
               description="Authentication service at the center of IIITK.in"
@@ -74,50 +74,14 @@ const ProjectsPage = () => {
             <ProjectCard
               title="Attendance Helper"
               description="Attendance Tracking tool."
-              github="https://www.github.com/iiitk-in/port0"
-              link="https://port0.iiitk.in"
+              github="https://www.github.com/NotAProton/AttendanceAssistant"
+              link="https://attendance.iiitk.in"
             />
             <ProjectCard
-              title="Some other Project"
-              description="Some other project on IIITK.in"
-              github="https://www.github.com/iiitk-in/port0"
-              link="https://port0.iiitk.in"
-            />
-            <ProjectCard
-              title="Port0"
-              description="Authentication service at the center of IIITK.in"
-              github="https://www.github.com/iiitk-in/port0"
-              link="https://port0.iiitk.in"
-            />
-            <ProjectCard
-              title="Attendance Helper"
-              description="Attendance Tracking tool."
-              github="https://www.github.com/iiitk-in/port0"
-              link="https://port0.iiitk.in"
-            />
-            <ProjectCard
-              title="Some other Project"
-              description="Some other project on IIITK.in"
-              github="https://www.github.com/iiitk-in/port0"
-              link="https://port0.iiitk.in"
-            />
-            <ProjectCard
-              title="Port0"
-              description="Authentication service at the center of IIITK.in"
-              github="https://www.github.com/iiitk-in/port0"
-              link="https://port0.iiitk.in"
-            />
-            <ProjectCard
-              title="Attendance Helper"
-              description="Attendance Tracking tool."
-              github="https://www.github.com/iiitk-in/port0"
-              link="https://port0.iiitk.in"
-            />
-            <ProjectCard
-              title="Some other Project"
-              description="Some other project on IIITK.in"
-              github="https://www.github.com/iiitk-in/port0"
-              link="https://port0.iiitk.in"
+              title="CARP"
+              description="Club Audience Response Platform"
+              github="https://www.github.com/iiitk-in/carp"
+              link="https://carp.iiitk.in"
             />
           </div>
         </div>
