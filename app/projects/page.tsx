@@ -27,7 +27,7 @@ const ProjectsPage = () => {
     window.addEventListener("keydown", keyDownHandler);
   });
   return (
-    <div className="overflow-auto bg-gradient-to-b from-neutral-900 to-slate-800">
+    <div className="overflow-y-scroll h-screen bg-gradient-to-b from-neutral-900 to-slate-800">
       <div className="flex">
         <Navbar currentPage="Projects" />
       </div>
